@@ -39,7 +39,9 @@ module.exports = {
         StandardTest:require('./src/master/standard-test'),
         MachineEvent:require('./src/master/machine-event'),
         Comodity:require('./src/master/comodity'),
-        Quality:require('./src/master/quality')
+        Quality:require('./src/master/quality'),
+        ArrayStep:require('./src/master/array-step'),
+        TermOfPayment:require('./src/master/term-of-payment')
     },
     purchasing: {
         PurchaseOrderItem: require('./src/purchasing/purchase-order-item'),

@@ -159,3 +159,13 @@ it("#27. Quality should valid", function () {
     var Quality = require('../src/master/quality');
     validate.quality(new Quality());
 });
+
+it("#28. Array Step should valid", function () {
+    var ArrayStep = require('../src/master/array-step');
+    validate.arrayStep(new ArrayStep());
+});
+
+it("#29. Term of Payment should valid", function () {
+    var TermOfPayment = require('../src/master/term-of-payment');
+    validate.termOfPayment(new TermOfPayment());
+});

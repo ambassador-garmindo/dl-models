@@ -7,9 +7,9 @@ module.exports = function (data) {
     data.should.have.property('code');
     data.code.should.instanceOf(String);
 
-    data.should.have.property('name');
-    data.name.should.instanceOf(String);
-
-    data.should.have.property('type');
-    data.type.should.instanceOf(String);
+    data.should.have.property('termOfPayment');
+    data.termOfPayment.should.instanceOf(String);
+    
+    data.should.have.property('isExport');
+    data.isExport.should.instanceOf(Boolean);
 };

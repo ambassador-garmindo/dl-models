@@ -39,7 +39,9 @@ module.exports = {
                 standardTest: require('./master/standard-test-validator'),
                 machineEvent: require('./master/machine-event-validator'),
                 comodity: require('./master/comodity-validator'),
-                quality: require('./master/quality-validator')
+                quality: require('./master/quality-validator'),
+                arrayStep: require('./master/array-step-validator'),
+                termOfPayment: require('./master/term-of-payment-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
