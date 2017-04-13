@@ -42,22 +42,35 @@ module.exports = {
             LotMachine: 'lot-machines',
             YarnEquivalentConversion: 'yarn-equivalent-conversions',
             Uster: 'usters',
-            LampStandard : 'lamp-standards',
-            AccountBank : 'account-banks',
-            Instruction : 'instructions',
-            OrderType : 'order-types',
-            ProcessType : 'process-types',
-            ColorType : 'color-types',
-            Step : 'steps',
-            MachineSpesificationStandard : 'machine-spesification-standards',
-            MaterialConstruction : 'material-constructions',
-            YarnMaterial : 'yarn-materials',
+            LampStandard: 'lamp-standards',
+            AccountBank: 'account-banks',
+            Instruction: 'instructions',
+            OrderType: 'order-types',
+            ProcessType: 'process-types',
+            ColorType: 'color-types',
+            Step: 'steps',
+            MachineSpesificationStandard: 'machine-spesification-standards',
+            MaterialConstruction: 'material-constructions',
+            YarnMaterial: 'yarn-materials',
             FinishType: 'finish-types',
             StandardTest: 'standard-tests',
             Comodity: 'comodities',
-            Quality:'qualities',
-            TermOfPayment:'term-of-payments'
+            Quality: 'qualities',
+            TermOfPayment: 'term-of-payments',
+            DesignMotive: 'design-motives'
         }
+    },
+    inventory:{
+      finishingPrinting : {
+          type:{
+              FPInventorySummary:"fp-inventory-summary",
+              FPInventoryMovement:"fp-inventory-movement",
+          },
+          collection:{
+              FPInventorySummary:"fp-inventory-summaries",
+              FPInventoryMovement:"fp-inventory-movements",
+          }
+      }  
     },
     purchasing: {
         type: {
@@ -106,6 +119,27 @@ module.exports = {
                 Kanban: 'kanbans',
                 MonitoringSpecificationMachine: 'monitoring-specification-machines'
 
+            },
+            qualityControl: {
+                defect: {
+                    type: {
+                        FabricTestCriterion: "fabric-test-criterion",
+                        FabricGradeTest: "fabric-grade-test",
+                        FabricQualityControl: "fabric-quality-control"
+                    },
+                    collection: {
+                        FabricQualityControl: "fabric-quality-controls"
+                    }
+                },
+
+                type: {
+                    Packing: "packing",
+                    PackingItem: "packing-item"
+                },
+                collection: {
+                    Packing: "packings",
+                    PackingItem: "packing-items",
+                }
             }
 
         },
@@ -114,13 +148,13 @@ module.exports = {
         type: {
             ProductionOrder: 'production-order',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contract',
-            WeavingSalesContract:'weaving-sales-contract',
+            WeavingSalesContract: 'weaving-sales-contract',
             SpinningSalesContract: 'spinning-sales-contract'
         },
         collection: {
-            ProductionOrder : 'production-orders',
+            ProductionOrder: 'production-orders',
             FinishingPrintingSalesContract: 'finishing-printing-sales-contracts',
-            WeavingSalesContract:'weaving-sales-contracts',
+            WeavingSalesContract: 'weaving-sales-contracts',
             SpinningSalesContract: 'spinning-sales-contracts'
         }
     }
