@@ -9,6 +9,7 @@ module.exports = {
         master: {
                 product: require("./master/product-validator"),
                 buyer: require("./master/buyer-validator"),
+                storage: require("./master/storage-validator"),
                 supplier: require("./master/supplier-validator"),
                 uom: require("./master/uom-validator"),
                 division: require("./master/division-validator"),
