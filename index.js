@@ -8,6 +8,7 @@ module.exports = {
     master: {
         Product: require('./src/master/product'),
         Buyer: require('./src/master/buyer'),
+        Storage: require('./src/master/storage'),
         Supplier: require('./src/master/supplier'),
         Uom: require('./src/master/uom'),
         Division: require('./src/master/division'),
