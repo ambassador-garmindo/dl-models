@@ -16,6 +16,7 @@ module.exports = {
         type: {
             Buyer: 'buyer',
             Supplier: 'supplier',
+            Storage: 'storage',
             uom: 'unit-of-measurement',
             Currency: 'currency',
             Vat: 'vat',
@@ -28,6 +29,7 @@ module.exports = {
         collection: {
             Buyer: 'buyers',
             Supplier: 'suppliers',
+            Storage: 'storages',
             uom: 'unit-of-measurements',
             Product: 'products',
             Machine: 'machines',
